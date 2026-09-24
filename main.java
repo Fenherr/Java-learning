@@ -9,5 +9,22 @@ public class main {
         System.out.println("Numbers: " + java.util.Arrays.toString(numbers));
         System.out.println("Matrix: " + java.util.Arrays.deepToString(matrix));
 
+        int sum = add(5, 10);
+        System.out.println("Sum: " + sum);
+
+        recursiveFunction(5);
+
+    }
+
+    public static int add(final int a, final int b) {
+        return a + b;
+    }
+
+    public static void recursiveFunction(final int n) {
+        if (n <= 0) {
+            return;
+        }
+        System.out.println("Recursive call with n = " + n);
+        recursiveFunction(n - 1);
     }
 }
