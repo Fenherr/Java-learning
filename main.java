@@ -2,7 +2,7 @@ public class main {
     public static void main(String[] args) {
 
         String language = "Java";
-        int[] numbers = {1, 2, 3, 4, 5};
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7};
         int[][] matrix = {{1, 2}, {3, 4}};
 
         System.out.println("I am learning " + language);
@@ -13,6 +13,10 @@ public class main {
         System.out.println("Sum: " + sum);
 
         recursiveFunction(5);
+
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println("Number at index " + i + ": " + numbers[i]);
+        }
 
     }
 
