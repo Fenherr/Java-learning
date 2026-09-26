@@ -5,7 +5,7 @@ public class Class {
         this.description = description;
     }
 
-    void setDescrition(){
+    void displayDescrition(){
         System.out.println(this.description);
     }
 
@@ -15,5 +15,15 @@ public class Class {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    protected int height;
+    protected int width;
+    protected int depth;
+
+    public Class(final int height, final int width, final int depth) {
+        this.height = height;
+        this.width = width;
+        this.depth = depth;
     }
 }
